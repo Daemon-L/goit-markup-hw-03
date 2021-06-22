@@ -20,6 +20,14 @@ body {
   background-color: var(--primary-back-color);
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+
 /* =========== COMMON =========== */
 
 /*links*/
@@ -85,19 +93,20 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 
-  /* outline: 1px solid tomato; */
+  outline: 1px solid tomato;
 }
 
 .section {
   padding: 94px 0;
 
-  /* outline: 1px solid #188ce8; */
+  outline: 1px solid #188ce8;
 }
 
 /* =========== HEADER =========== */
 
 .header-section {
   border-bottom: 1px solid #ececec;
+  display: flex;
 }
 
 /* logo */
@@ -122,14 +131,32 @@ body {
   margin-top: 60px;
   margin-bottom: 20px;
 }
+
+/* .logo-box {
+  display: inline-block;
+} */
+
 /* =========== NAVIGATION =========== */
+
+.navigation {
+  display: flex;
+}
 
 .nav-list {
   display: flex;
+  
 }
 
 .contacts-list {
   display: flex;
+}
+
+.nav-item {
+  margin-left: 50px;
+}
+
+.contacts-item {
+  margin-right: 50px;
 }
 
 /* =========== HERO =========== */
@@ -171,20 +198,31 @@ body {
 
 .advantages-section {
   line-height: 1.71;
+  margin-bottom: 0px;
 }
 .advantag-title {
   color: var(--secondary-font-collor);
   font-size: 14px; /* перебивает font-size от браузера */
   line-height: 1.14;
   text-transform: uppercase;
+
+  /* margin-right: 30px;
+  margin-bottom: 10px; */
 }
 
-.advantag-list- {
+.advantag-list {
   display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -5px;
 }
 
-.advantag-desc {
-  width: 270px;
+.advantag-item- {
+  margin-left: 30px;
+  margin-top: 5px;
+
+  flex-basis: calc((100% - 120px) / 4);
 }
 
 /* =========== ENGAGE =========== */
@@ -215,6 +253,10 @@ body {
   text-align: center;
 
   background-color: #f5f4fa;
+}
+
+.team-person {
+  background-color: var(--primary-back-color);
 }
 
 .team-name {
@@ -270,6 +312,8 @@ body {
   margin-right: 0px;
 }
 
+/* ================================= */
+
 .works-title {
   font-size: 18px;
   line-height: 2;
@@ -282,22 +326,27 @@ body {
   line-height: 1.87;
 }
 
-.works-list- {
+.works-list {
   padding-left: 0px;
+  
   display: flex;
-
   flex-wrap: wrap;
+
+  margin-left: -15px;
+  margin-top: -30px;
 }
 
-.works-item- {
+.works-item {
   background-color: var(--primary-back-color);
 
-  margin-right: 30px;
+  margin-left: 15px;
   margin-top: 30px;
+
+  flex-basis: calc((100% - 60px) / 3);
 }
 
-.works-item-:nth-child(3n + 3) {
+/* .works-item:nth-child(3n + 3) {
   margin-right: 0px;
-}
+} */
 
-/* .works-description {} */
+
