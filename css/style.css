@@ -1,10 +1,8 @@
 :root {
   --primary-font-color: #757575;
   --secondary-font-collor: #212121;
-
   --primary-back-color: #fff;
   --secondary-back-color: #2f303a;
-
   --accent-color: #2196f3;
 
   --primary-font-family: Roboto, sans-serif;
@@ -27,7 +25,6 @@ h6,
 p {
   margin: 0px;
 }
-
 
 /* =========== COMMON =========== */
 
@@ -93,15 +90,11 @@ p {
   width: 1200px;
   margin: auto;
   padding: 0 15px;
-
-  /* outline: 1px solid tomato; */
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  /* outline: 1px solid green; */
 }
 
 /* =========== HEADER =========== */
